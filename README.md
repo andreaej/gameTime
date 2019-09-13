@@ -40,7 +40,8 @@ integer that indicates what type of game piece currently resides at that locatio
 to (and including) 5 are used to denote standard game pieces bearing the labels ‘print’, ‘if’, ‘while’, ‘for’,
 ‘def’ and ‘list’. Empty spaces are denoted by -1 while the special game piece that clears all of the game 
 pieces of a particular type is denoted by 6. A game board is shown below, along with the list that
-represents it. 
+represents it. <br/>
+![Sample Gameboard](https://github.com/andreaej/gameTime/blob/master/Screen%20Shot%202019-09-13%20at%2012.15.52%20PM.png)
 ```
 [[0, 3, 3, 4, 5, 5, 1],
 [1, 3, 0, 1, 5, 4, 1],
@@ -91,9 +92,9 @@ the *swap* function does not return a result – it modifies the board that is p
 ### Part 3: The Special Piece
 When a straight line of five pieces is formed, or an L or a T involving five identical pieces is formed, the
 pieces are removed from the game board and a special piece is inserted in the location where the swap
-was performed. 
-# TODO The special game piece is denoted by the following symbol:
-This piece can be swapped with any adjacent piece (except for another special piece). When the swap is
+was performed. <br/>
+<p align="center"> <img src="https://github.com/andreaej/gameTime/blob/master/Screen%20Shot%202019-09-13%20at%2012.16.00%20PM.png" </p>
+<br/>This piece can be swapped with any adjacent piece (except for another special piece). When the swap is
 performed, the special piece is removed from the board, along with all occurrences of the other piece
 with which it was swapped. This is a powerful piece because it simplifies the board and makes larger
 matches more probable. The player is also awarded 1,000 points when the piece is initially created
