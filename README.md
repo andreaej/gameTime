@@ -30,8 +30,9 @@ returns a different value than expected then my code will not be able to call it
 game will not work.**
 
 ## Milestone #1 (Part 1 & 2) 
-## Due: 9/22/2019 11:59 
-## To submit: Create branch, commit, and initiate pull request
+> Due: 9/22/2019 11:59 
+
+> To submit: Create branch, commit, and initiate pull request
 
 ### Part 1: Creating the Board
 We will use a two dimensional list to represent the game board. Each element in the list will be an
@@ -83,8 +84,9 @@ body to do anything but can’t leave it empty).
 the *swap* function does not return a result – it modifies the board that is passed to it as a parameter.**
 
 ## Milestone #2 (Part 3 & 4) 
-## Due: 9/29/2019 11:59 
-## To submit: Create branch, commit, and initiate pull request
+> Due: 9/29/2019 11:59 
+
+> To submit: Create branch, commit, and initiate pull request
 
 ### Part 3: The Special Piece
 When a straight line of five pieces is formed, or an L or a T involving five identical pieces is formed, the
@@ -134,8 +136,9 @@ Otherwise
 **My implementations of vLineAt and hLineAt are each approximately 10 lines of code (without any comments) while my implementation of canSwap is slightly shorter.**
 
 ## Milestone #3 (Part 5) 
-## Due: 10/06/2019 11:59pm 
-## To submit: Create branch, commit, and initiate pull request
+> Due: 10/06/2019 11:59pm 
+
+> To submit: Create branch, commit, and initiate pull request
 
 ### Part 5: Giving the Player a Hint
 Sometimes the player needs a little bit of help to find a legal move on the board. Sometimes no legal
@@ -152,7 +155,7 @@ performing the swap forms a line of (at least) three identical symbols.
 
 ### Additional Requirements:
 - You must not modify any of the code that I have provided except for:
-   - Adding your name and a bried description of the program to the top of the file (and updating the comment if you feel inclined to do so)
+   - Adding your name and a brief description of the program to the top of the file (and updating the comment if you feel inclined to do so)
    - Adding the *createBoard*, *vLineAt* and *hLineAt* functions
    - Updating the bodies of *swap*, *canSwap*, *hint*, and *clearAll*
 - You may assume that the functions that you are writing will be called with “reasonable” values. For example, it is **not** necessary to protect against scenarios such as *createBoard* being called with a negative number of columns.
@@ -164,3 +167,14 @@ performing the swap forms a line of (at least) three identical symbols.
 - Your program must not use global variables (except for constant values that are never changed, and in this assignment you may not even want any global constants beyond the ones that I have already defined).
 - Your program must use good programming style. This includes things like appropriate variable names, good comments, minimizing the use of magic numbers, etc. 
 - Break and continue are generally considered bad form. As a result, you are NOT allowed to use them when creating your solution to this assignment. In general, their use can be avoided by using a combination of if statements and writing better conditions on your while loops.
+
+### Hints:
+- In some of the functions you will need to know the number of rows and/or the number of columns in the board. These values can be determined by using the built-in len function. In particular, the number of rows in the board is *len(board)* and the number of columns in the board is *len(board[0])*.
+- While my automated tests are reasonably thorough, they don’t consider every possible case. You need to implement functions that provide the functionality described in this document, not just functions that pass the collection of provided tests.
+
+### For an A+:
+- The specification for the *hint* function above only requires that it return a some legal move (if such a move exists). It doesn’t require hint to determine how many different legal moves there are, or to attempt to return the best possible move.
+- Improve the *hint* function so that it returns the best legal move, where any move that forms a line of 5,
+a T or an L (which will result in a special piece being placed on the board) is better than any move that
+forms a line of 4, which is better than any move that forms a line of 3.
+- **If you complete the A+ portion of the assignment, please include a clear, highly conspicuous note indicating such at the top of your submission so that I know to grade it as such.**
