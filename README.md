@@ -132,3 +132,35 @@ Otherwise
    - Your implementation of *canSwap* should call the *vLineAt* and *hLineAt* functions that you wrote earlier in this part of the assignment. 
    
 **My implementations of vLineAt and hLineAt are each approximately 10 lines of code (without any comments) while my implementation of canSwap is slightly shorter.**
+
+## Milestone #3 (Part 5) 
+## Due: 10/06/2019 11:59pm 
+## To submit: Create branch, commit, and initiate pull request
+
+### Part 5: Giving the Player a Hint
+Sometimes the player needs a little bit of help to find a legal move on the board. Sometimes no legal
+move exists. The *hint* function that you will update in this part of the assignment will identify a legal
+swap, or it will indicate that no such swap is possible. A swap is legal if the two pieces are both in the
+same column in adjacent rows, or the pieces are both in the same row in adjacent columns and
+performing the swap forms a line of (at least) three identical symbols.
+- The *hint* function takes the game board as its only parameter. 
+- It will return four integer values that represent the row and column of a piece, and the row and column of a second adjacent (either horizontally or vertically) piece, that can be swapped to form a line. If no such swap is possible then the function will return -1, -1, -1, -1 to indicate such. 
+- You can test your *hint* function by pressing *‘h’* on the keyboard when playing a game. 
+- My user interface will highlight the indicated locations on the board, bringing them to the attention of the player. A message is displayed near the bottom of the window when no swap is possible. When no swap is possible the game board can be reset by pressing *‘r’*.
+
+**My implementation of hint is approximately 10 lines of code (without any blank lines or comments).**
+
+### Additional Requirements:
+- You must not modify any of the code that I have provided except for:
+   - Adding your name and a bried description of the program to the top of the file (and updating the comment if you feel inclined to do so)
+   - Adding the *createBoard*, *vLineAt* and *hLineAt* functions
+   - Updating the bodies of *swap*, *canSwap*, *hint*, and *clearAll*
+- You may assume that the functions that you are writing will be called with “reasonable” values. For example, it is **not** necessary to protect against scenarios such as *createBoard* being called with a negative number of columns.
+- All lines of code that you write must be inside functions (except for the function definitions themselves and any constant definitions).
+- You must create and use the functions described previously in this document.
+- Do not define one function inside of another function.
+- You must make appropriate use of loops. In particular, your program should work for game boards of various sizes. Various game board sizes can be tested by choosing different difficulty levels when starting the game.
+- Include appropriate comments for each of your functions. All of your functions should begin with a comment that briefly describes the purpose of the function, along with a description of every parameter and every return value. Functions that do not return a value should be explicitly marked as such.
+- Your program must not use global variables (except for constant values that are never changed, and in this assignment you may not even want any global constants beyond the ones that I have already defined).
+- Your program must use good programming style. This includes things like appropriate variable names, good comments, minimizing the use of magic numbers, etc. 
+- Break and continue are generally considered bad form. As a result, you are NOT allowed to use them when creating your solution to this assignment. In general, their use can be avoided by using a combination of if statements and writing better conditions on your while loops.
