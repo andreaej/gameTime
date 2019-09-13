@@ -11,7 +11,7 @@ By the end of this project you will:
 - Created and manipulated existing functions
 - Add code to an existing repository
 
-***Timing***
+***Timing:***
 In total, you will have 4 weeks to complete this project. The first 3 weeks will be dedicated to implementing the project itself and the final week will be used for code reviews. 
 
 ### Description
@@ -30,6 +30,9 @@ returns a different value than expected then my code will not be able to call it
 game will not work.**
 
 ## Milestone #1 (Part 1 & 2) 
+## Due: 9/22/2019 11:59 
+## To submit: Create branch, commit, and initiate pull request
+
 ### Part 1: Creating the Board
 We will use a two dimensional list to represent the game board. Each element in the list will be an
 integer that indicates what type of game piece currently resides at that location. The integers 0 though
@@ -48,7 +51,7 @@ represents it.
 - Create a function named createBoard (notice the use of a lowercase c and an uppercase B). 
 - The function will take 3 integer parameters: the number of rows in the board, the number of columns in the
 board, and the number of unique game pieces that can appear on the board. 
-- **Your function must return a two-dimensional list with the indicated number of rows and columns. Every value in the twodimensional list must be a random integer r where r is greater than or equal to 0 and less than the number of unique symbols provided as a parameter to the function.** The code that I have provided has
+- Your function must return a two-dimensional list with the indicated number of rows and columns. Every value in the twodimensional list must be a random integer r where r is greater than or equal to 0 and less than the number of unique symbols provided as a parameter to the function. The code that I have provided has
 already imported the randrange function, which you can use to generate a random integer within a
 range.
 
@@ -81,22 +84,27 @@ for a second game piece (r2 and c2).
 the swap function does not return a result – it modifies the board that is passed to it as a parameter.**
 
 ## Milestone #2 (Part 3 & 4) 
+## Due: 9/29/2019 11:59 
+## To submit: Create branch, commit, and initiate pull request
+
 ### Part 3: The Special Piece
 When a straight line of five pieces is formed, or an L or a T involving five identical pieces is formed, the
 pieces are removed from the game board and a special piece is inserted in the location where the swap
-was performed. The special game piece is denoted by the following symbol:
+was performed. 
+# TODO The special game piece is denoted by the following symbol:
 This piece can be swapped with any adjacent piece (except for another special piece). When the swap is
 performed, the special piece is removed from the board, along with all occurrences of the other piece
 with which it was swapped. This is a powerful piece because it simplifies the board and makes larger
 matches more probable. The player is also awarded 1,000 points when the piece is initially created
 which is very helpful for reaching the target score.
-Replace the existing implementation of clearAll with a new implementation that replaces all
-occurrences of a symbol with empty spaces. Your function will take a two-dimensional list that
-represents the board as the first parameter, and it will take the symbol that should be cleared as its
-section parameter. Your function will not return a result. Instead, it will modify the board passed as the
-first parameter. Recall that empty spaces are represented by -1, or better yet, use the EMPTY constant
-that is already defined in the starter code.
-My implementation of clearAll is 4 lines long (without any comments or blank lines).
+- Replace the existing implementation of clearAll with a new implementation that replaces all
+occurrences of a symbol with empty spaces. 
+- Your function will take a two-dimensional list that represents the board as the first parameter, and it will take the symbol that should be cleared as its second parameter. 
+- Your function will not return a result. 
+- Instead, it will modify the board passed as the first parameter. Recall that empty spaces are represented by -1, or better yet, use the EMPTY constant that is already defined in the starter code.
+
+**My implementation of clearAll is 4 lines long (without any comments or blank lines).**
+
 ### Part 4: Limiting the Swaps
 The game becomes more interesting (and challenging) when swaps can only be performed when they
 form a straight line of (at least) three identical symbols. To help us implement this restriction we’ll begin
