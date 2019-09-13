@@ -12,7 +12,7 @@ By the end of this project you will:
 - Add code to an existing repository
 
 ***Timing:***
-In total, you will have 4 weeks to complete this project. The first 3 weeks will be dedicated to implementing the project itself and the final week will be used for code reviews. 
+In total, you will have 4.5 weeks to complete this project. The first 3 weeks will be dedicated to implementing the project itself and the final week will be used for code reviews. 
 
 ### Description
 Bejeweled and Candy Crush are examples of match-three games. The goal in such games is to swap
@@ -178,3 +178,19 @@ performing the swap forms a line of (at least) three identical symbols.
 a T or an L (which will result in a special piece being placed on the board) is better than any move that
 forms a line of 4, which is better than any move that forms a line of 3.
 - **If you complete the A+ portion of the assignment, please include a clear, highly conspicuous note indicating such at the top of your submission so that I know to grade it as such.**
+
+## Milestone #4 (Code Review)
+> Due: 10/10/2019 11:59pm
+
+> Details will be provided at a later date
+- Each person will be required to review one other person's project and in return have your project reviewed someone else.
+- The reviewer will need to provide comments that are S.M.A.R.T (We will review what this means). 
+- The reviewer will be evaluated by the reviewee and myself according to a provided rubric. This will be a part of your grade.
+- Upon receiving your feedback from your reviewer, you will then have until **10/16/2019** to pull in suggestions and make changes to your project.
+
+## Final Submission
+> Due: 10/16/2019 11:59pm 
+
+> No late submissions will be accepted. Cheating will result in a zero. This is an individual assignment. 
+
+### This assignment will be graded on a combination of functionality and style. A base grade will be determined from the general level of functionality of the program (Does it create the board correctly? Does it correctly implement swap? Does it restrict swaps to moves that form lines? Does it provide correct hints? Etc.).
