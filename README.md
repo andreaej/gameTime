@@ -24,18 +24,19 @@ among others.
 In this assignment you will add functionality to codeCrusher – a computer programming themed matchthree game. I have written all of the user interface code (graphics and mouse) for the game, as well as
 some of the game logic, and I have created all of the necessary art assets. Your task is to write the
 functions that implement the remaining aspects of the game logic, resulting in a fully functional game.
-These functions are described in the following sections. Note that you must follow the implementation
+These functions are described in the following sections. **Note that you must follow the implementation
 instructions exactly. If your function has a different name, takes a different number of parameters, or
 returns a different value than expected then my code will not be able to call it successfully, and the
-game will not work.
-## Milestone #1 (Part 1 & 2)
+game will not work.**
+
+## Milestone #1 (Part 1 & 2) 
 ### Part 1: Creating the Board
 We will use a two dimensional list to represent the game board. Each element in the list will be an
 integer that indicates what type of game piece currently resides at that location. The integers 0 though
 to (and including) 5 are used to denote standard game pieces bearing the labels ‘print’, ‘if’, ‘while’, ‘for’,
 ‘def’ and ‘list’. Empty spaces are denoted by -1 while the special game piece that clears all of the game 
 pieces of a particular type is denoted by 6. A game board is shown below, along with the list that
-represents it.
+represents it. 
 ```
 [[0, 3, 3, 4, 5, 5, 1],
 [1, 3, 0, 1, 5, 4, 1],
@@ -44,21 +45,20 @@ represents it.
 [4, 3, 1, 3, 3, 2, 5],
 [2, 4, 2, 0, 4, 2, 5]]
 ```
-Create a function named createBoard (notice the use of a lowercase c and an uppercase B). The
-function will take 3 integer parameters: the number of rows in the board, the number of columns in the
-board, and the number of unique game pieces that can appear on the board. Your function must return
-a two-dimensional list with the indicated number of rows and columns. Every value in the twodimensional list must be a random integer r where r is greater than or equal to 0 and less than the
-number of unique symbols provided as a parameter to the function. The code that I have provided has
+- Create a function named createBoard (notice the use of a lowercase c and an uppercase B). 
+- The function will take 3 integer parameters: the number of rows in the board, the number of columns in the
+board, and the number of unique game pieces that can appear on the board. 
+- **Your function must return a two-dimensional list with the indicated number of rows and columns. Every value in the twodimensional list must be a random integer r where r is greater than or equal to 0 and less than the number of unique symbols provided as a parameter to the function.** The code that I have provided has
 already imported the randrange function, which you can use to generate a random integer within a
 range.
-The game board above was construct by calling createBoard with parameters indicating 6 rows, 7
+
+The game board above was constructed by calling createBoard with parameters indicating 6 rows, 7
 columns and 6 unique symbols. Because createBoard returns a random result, you will likely see
 different integers when you call createBoard with those same parameters, but the structure of the
 two-dimensional list you create should match what is shown above.
-Run the codeCrusher game after implementing this function. My automated tests will give you feedback
-on whether or not you have this function working. Do not proceed to Part 2 until this function passes all
-of my tests. My implementation of createBoard is about 7 lines of code without any comments or
-blank lines.
+- Run the codeCrusher game after implementing this function. My automated tests will give you feedback
+on whether or not you have this function working. 
+#### Do not proceed to Part 2 until this function passes all of my tests. My implementation of createBoard is about 7 lines of code without any comments or blank lines.
 
 ### Part 2: Swapping Game Pieces
 Once you have implemented createBoard successfully you can attempt to play a game, and the game
@@ -69,15 +69,16 @@ behaviour is occurring because the body of the swap function currently only cont
 Python reserved word that does nothing. (This reserved word is included in Python because function, if 
 statement, and loop bodies cannot be empty so pass is placed in the body when we don’t want the
 body to do anything but can’t leave it empty).
-Your next task is to provide a correct implementation for swap. The swap function takes 5 parameters:
-the game board, followed by the row and column for a game piece (r1 and c1), and the row and column
-for a second game piece (r2 and c2). Your function should modify the game board so that the pieces at
-(r1, c1) and (r2, c2) are swapped. Once your swap function is implemented correctly it will be possible
-for you to play the game by swapping adjacent pieces. In fact, the game should be rather easy because
-any adjacent pieces can be swapped, whether they form a line or not. In Step 4 we’ll restrict the swaps
-to moves that form a line of at least three identical symbols.
-My implementation of swap is only three lines long (without any comments or blank lines). Note that
-the swap function does not return a result – it modifies the board that is passed to it as a parameter.
+
+- Your next task is to provide a correct implementation for swap. 
+- The swap function takes 5 parameters:
+   - the game board, followed by the row and column for a game piece (r1 and c1), and the row and column
+for a second game piece (r2 and c2). 
+- Your function should modify the game board so that the pieces at (r1, c1) and (r2, c2) are swapped. Once your swap function is implemented correctly it will be possible for you to play the game by swapping adjacent pieces. In fact, the game should be rather easy because any adjacent pieces can be swapped, whether they form a line or not. 
+- In Step 4, we’ll restrict the swaps to moves that form a line of at least three identical symbols.
+
+**My implementation of swap is only three lines long (without any comments or blank lines). Note that
+the swap function does not return a result – it modifies the board that is passed to it as a parameter.**
 
 ## Milestone #2 (Part 3 & 4) 
 ### Part 3: The Special Piece
