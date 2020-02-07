@@ -12,7 +12,7 @@ By the end of this project you will:
 - Add code to an existing repository
 
 ***Timing:***
-In total, you will have 4.5 weeks to complete this project. The first 3 weeks will be dedicated to implementing the project itself and the final week will be used for code reviews. 
+In total, you will have 4 weeks to complete this project. The first 3 weeks will be dedicated to implementing the project itself and the final week will be used for code reviews. 
 
 ### Description
 Bejeweled and Candy Crush are examples of match-three games. The goal in such games is to swap
@@ -30,7 +30,7 @@ returns a different value than expected then my code will not be able to call it
 game will not work.**
 
 ## Milestone #1 (Part 1 & 2) 
-> Due: 9/22/2019 11:59 
+> **Due: 02/19/2020 11:59pm**
 
 > To submit: Create branch, commit, and initiate pull request
 
@@ -85,7 +85,7 @@ body to do anything but can’t leave it empty).
 the *swap* function does not return a result – it modifies the board that is passed to it as a parameter.**
 
 ## Milestone #2 (Part 3 & 4) 
-> Due: 9/29/2019 11:59 
+> **Due: 02/26/2020 11:59 pm**
 
 > To submit: Create branch, commit, and initiate pull request
 
@@ -137,9 +137,11 @@ Otherwise
 **My implementations of vLineAt and hLineAt are each approximately 10 lines of code (without any comments) while my implementation of canSwap is slightly shorter.**
 
 ## Milestone #3 (Part 5) 
-> Due: 10/06/2019 11:59pm 
+> **Due: 03/04/2020 11:59 pm** 
 
-> To submit: Create branch, commit, and initiate pull request
+> To submit: Create branch, commit, and initiate pull request 
+
+> **This should be your final submission before Code Review**
 
 ### Part 5: Giving the Player a Hint
 Sometimes the player needs a little bit of help to find a legal move on the board. Sometimes no legal
@@ -181,16 +183,17 @@ forms a line of 4, which is better than any move that forms a line of 3.
 - **If you complete the A+ portion of the assignment, please include a clear, highly conspicuous note indicating such at the top of your submission so that I know to grade it as such.**
 
 ## Milestone #4 (Code Review)
-> Due: 10/10/2019 11:59pm
+> Due: 03/07/2020 11:59pm
 
-> Details will be provided at a later date
+> Details will be provided 03/04/20 in class
 - Each person will be required to review one other person's project and in return have your project reviewed someone else.
 - The reviewer will need to provide comments that are S.M.A.R.T (We will review what this means). 
 - The reviewer will be evaluated by the reviewee and myself according to a provided rubric. This will be a part of your grade.
-- Upon receiving your feedback from your reviewer, you will then have until **10/16/2019** to pull in suggestions and make changes to your project.
+- Upon receiving your feedback from your reviewer, you will then have until **03/11/2020 11:59 pm** to pull in suggestions and make changes to your project.
+   - This is where you decide to use the feedback from your reviewer and improve your code. 
 
-## Final Submission
-> Due: 10/16/2019 11:59pm 
+# Final Submission
+> Due: 03/11/2020 11:59 pm 
 
 > No late submissions will be accepted. Cheating will result in a zero. This is an individual assignment. 
 
