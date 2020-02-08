@@ -182,18 +182,9 @@ a T or an L (which will result in a special piece being placed on the board) is 
 forms a line of 4, which is better than any move that forms a line of 3.
 - **If you complete the A+ portion of the assignment, please include a clear, highly conspicuous note indicating such at the top of your submission so that I know to grade it as such.**
 
-## Milestone #4 (Code Review)
-> Due: 03/07/2020 11:59pm
-
-> Details will be provided 03/04/20 in class
-- Each person will be required to review one other person's project and in return have your project reviewed someone else.
-- The reviewer will need to provide comments that are S.M.A.R.T (We will review what this means). 
-- The reviewer will be evaluated by the reviewee and myself according to a provided rubric. This will be a part of your grade.
-- Upon receiving your feedback from your reviewer, you will then have until **03/11/2020 11:59 pm** to pull in suggestions and make changes to your project.
-   - This is where you decide to use the feedback from your reviewer and improve your code. 
 
 # Final Submission
-> Due: 03/11/2020 11:59 pm 
+> Due: 03/04/2020 11:59 pm 
 
 > No late submissions will be accepted. Cheating will result in a zero. This is an individual assignment. 
 
